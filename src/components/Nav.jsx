@@ -4,11 +4,11 @@ const Nav = () => {
   return (
     <nav
       id="top"
-      className="flex px-4 py-4 justify-around bg-jio text-jio-background"
+      className="flex justify-around bg-jio px-4 py-4 text-jio-background"
     >
       <Link
         to="/"
-        className="text-2xl font-title before:content-['JIO_ry'] md:before:content-['Jyväskylän_Insinööriopiskelijat_ry']"
+        className="font-title text-2xl before:content-['JIO_ry'] md:before:content-['Jyväskylän_Insinööriopiskelijat_ry']"
       ></Link>
       <nav className="flex gap-4">
         {[
@@ -21,7 +21,7 @@ const Nav = () => {
             className={({ isActive }) =>
               isActive
                 ? "rounded-lg p-1.5 font-text text-jio-text transition ease-in-out"
-                : "rounded-lg p-1.5 font-text hover:bg-jio-secondary transition ease-in-out delay-100"
+                : "rounded-lg p-1.5 font-text transition delay-100 ease-in-out hover:bg-jio-secondary"
             }
           >
             {title}

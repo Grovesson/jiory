@@ -19,8 +19,8 @@ const router = createBrowserRouter(
       <Route path="/about" element={<AboutPage />} />
       <Route path="/board" element={<BoardPage />} />
       <Route path="*" element={<NotFoundPage />} />
-    </Route>
-  )
+    </Route>,
+  ),
 );
 
 const App = () => {
