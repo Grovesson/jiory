@@ -592,61 +592,40 @@ video {
   }
 }
 
-.absolute{
-  position: absolute;
-}
-
-.relative{
-  position: relative;
-}
-
-.left-0{
-  left: 0px;
-}
-
-.top-0{
-  top: 0px;
-}
-
-.z-10{
-  z-index: 10;
-}
-
-.m-auto{
-  margin: auto;
+.block{
+  display: block;
 }
 
 .flex{
   display: flex;
 }
 
-.grid{
-  display: grid;
-}
-
 .h-\[25svh\]{
   height: 25svh;
 }
 
-.h-full{
-  height: 100%;
+.h-8{
+  height: 2rem;
 }
 
-.h-auto{
-  height: auto;
+.h-12{
+  height: 3rem;
 }
 
-.max-h-fit{
-  max-height: -moz-fit-content;
-  max-height: fit-content;
+.h-20{
+  height: 5rem;
 }
 
-.w-full{
-  width: 100%;
+.w-auto{
+  width: auto;
 }
 
-.place-items-center{
-  place-items: center;
+.flex-col{
+  flex-direction: column;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
 }
 
 .justify-center{
@@ -659,10 +638,6 @@ video {
 
 .gap-4{
   gap: 1rem;
-}
-
-.self-center{
-  align-self: center;
 }
 
 .overflow-hidden{
@@ -683,15 +658,6 @@ video {
   background-color: rgb(244 244 244 / var(--tw-bg-opacity, 1));
 }
 
-.bg-jio-text{
-  --tw-bg-opacity: 1;
-  background-color: rgb(28 28 28 / var(--tw-bg-opacity, 1));
-}
-
-.bg-jio-text\/50{
-  background-color: rgb(28 28 28 / 0.5);
-}
-
 .bg-\[url\(\.\/assets\/hallitus\.webp\)\]{
   background-image: url(./assets/hallitus.webp);
 }
@@ -704,30 +670,16 @@ video {
   background-position: center;
 }
 
-.object-contain{
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-.object-cover{
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .p-1\.5{
   padding: 0.375rem;
 }
 
-.p-8{
-  padding: 2rem;
-}
-
-.p-16{
-  padding: 4rem;
-}
-
 .p-12{
   padding: 3rem;
+}
+
+.p-8{
+  padding: 2rem;
 }
 
 .px-4{
@@ -742,6 +694,14 @@ video {
 
 .pb-4{
   padding-bottom: 1rem;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.align-middle{
+  vertical-align: middle;
 }
 
 .font-text{
@@ -776,25 +736,6 @@ video {
   color: rgb(28 28 28 / var(--tw-text-opacity, 1));
 }
 
-.blur{
-  --tw-blur: blur(8px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.blur-sm{
-  --tw-blur: blur(4px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.grayscale{
-  --tw-grayscale: grayscale(100%);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.filter{
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .transition{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -821,31 +762,11 @@ video {
   background-color: rgb(178 63 90 / var(--tw-bg-opacity, 1));
 }
 
-.hover\:bg-jio-text:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(28 28 28 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-\[url\(\.\/assets\/hallitus_bw\.webp\)\]:hover{
-  background-image: url(./assets/hallitus_bw.webp);
-}
-
-.hover\:blur-none:hover{
-  --tw-blur:  ;
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.hover\:filter-none:hover{
-  filter: none;
-}
-
-@media (min-width: 640px){
-  .sm\:h-\[50svh\]{
-    height: 50svh;
-  }
-}
-
 @media (min-width: 768px){
+  .md\:h-\[35svh\]{
+    height: 35svh;
+  }
+
   .md\:before\:content-\[\'Jyv\E4skyl\E4n_Insin\F6\F6riopiskelijat_ry\'\]::before{
     --tw-content: 'Jyväskylän Insinööriopiskelijat ry';
     content: var(--tw-content);
@@ -865,9 +786,5 @@ video {
   .dark\:text-jio-background{
     --tw-text-opacity: 1;
     color: rgb(244 244 244 / var(--tw-text-opacity, 1));
-  }
-
-  .dark\:filter{
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   }
 }

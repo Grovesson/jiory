@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "wind": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
   },
   "dependencies": {
     "gh-pages": "^6.2.0",
