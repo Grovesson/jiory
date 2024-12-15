@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{html,js,jsx}"],
+  content: ["./src/**/*.{html,js,jsx,webp,jpg,png}"],
   theme: {
     extend: {
       colors: {
@@ -19,22 +19,7 @@ export default {
       screens: {
         'uw': '2560px',
       },
-      keyframes: {
-        wiggle: {
-          '0%, 100%': { transform: 'rotate(-3deg)' },
-          '50%': { transform: 'rotate(3deg)' },
-        },
-        fadeOut: {
-          '0%': { opacity: '1' },
-          '100%': { opacity: '0' },
-        },
-      },
-      animation: {
-        wiggle: 'wiggle 1s ease-in-out infinite',
-        fadeOut: 'fadeOut 0.5s ease-out forwards',
-      },
     },
   },
-  plugins: [],
 }
 

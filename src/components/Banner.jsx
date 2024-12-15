@@ -1,11 +1,9 @@
 import React from "react";
 
-const Banner = () => {
+const Banner = () => {-15
   return (
-    <div className="flex justify-center h-[20svh] sm:h-[40svh] bg-[url(assets/hallitus.webp)] bg-cover bg-center overflow-hidden">
-      <div className="flex justify-center bg-black/25 dark:bg-black/75 w-full">
-        <img className="p-12" src="assets/jio.png" alt="JIOn logo" />
-      </div>
+    <div className="bg-[rgb(123,123,123)] bg-[url(assets/hallitus.webp)] p-6 bg-center bg-cover dark:bg-blend-multiply">
+        <img className="m-auto h-12 sm:h-24 md:h-48 lg:h-64" src="assets/jio.webp" alt="JIOn logo" />
     </div>
   );
 };

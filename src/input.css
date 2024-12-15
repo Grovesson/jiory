@@ -3,3 +3,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .gradient-mask {
+    position: relative;
+    mask-image: linear-gradient(to bottom, black 20%, rgba(0, 0, 0, 0) 50%);
+  }
+  .gradient-mask-none {
+    mask-image: linear-gradient(to bottom, black, black);
+  }
+}

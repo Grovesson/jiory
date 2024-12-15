@@ -1,18 +1,14 @@
-import React, { useState } from "react";
-import { RiCursorFill } from "react-icons/ri";
+import React from "react";
 
 const Home = () => {
   const yearsSince1982 = () => new Date().getFullYear() - 1982;
-
-  const [isHidden, setIsHidden] = useState(false);
-
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6 p-6 bg-jio-background dark:bg-jio-text text-jio-text dark:text-jio-background">
         <div
-          className={`flex flex-col bg-[url(assets/lippu.webp)] bg-cover bg-center group`}
+          className={`flex flex-col bg-[url('assets/lippu.webp')] bg-cover bg-center group`}
         >
-          <div className="bg-black/75 sm:opacity-0 sm:group-hover:opacity-100 sm:group-hover:bg-black/75 drop-shadow-lg sm:hover:drop-shadow-2xl transition ease-in-out delay-100 p-6 h-full">
+          <div className="p-6 h-full bg-black/75 sm:gradient-mask sm:hover:gradient-mask-none">
             <h2 className="text-white text-lg font-title mb-3">
               Yli 1900 jäsentä
             </h2>
@@ -45,21 +41,10 @@ const Home = () => {
           </div>
         </div>
         <div
-          className={`flex flex-col bg-[url(assets/hallitus23.webp)] bg-cover bg-center group relative`}
+          className={`flex flex-col bg-[url('assets/hallitus23.webp')] bg-cover bg-center group relative`}
         >
-          {!isHidden && (
-            <div
-              className="absolute z-10 animate-none opacity-0 sm:opacity-100 sm:animate-wiggle sw:hover:animate-fadeOut hover:hidden transition flex justify-center content-center w-full h-full"
-              onMouseEnter={() => setIsHidden(true)}
-            >
-              <RiCursorFill
-                size={96}
-                className="content-center self-center justify-center"
-              />
-            </div>
-          )}
-          <div className="bg-black/75 sm:opacity-0 sm:group-hover:opacity-100 sm:group-hover:bg-black/75 drop-shadow-lg sm:hover:drop-shadow-2xl transition ease-in-out delay-100 p-6 h-full">
-            <h2 className="text-white text-lg font-title mb-3">
+          <div className="p-6 h-full bg-black/75 sm:gradient-mask sm:hover:gradient-mask-none">
+          <h2 className="text-white text-lg font-title mb-3">
               10 koulutusalaa.
             </h2>
             <p className="text-white font-text mb-3">
@@ -80,10 +65,10 @@ const Home = () => {
           </div>
         </div>
         <div
-          className={`flex flex-col bg-[url(assets/patsas.webp)] bg-top sm:bg-[center_bottom_23rem] lg:bg-center xl:bg-top 2xl:bg-[center_bottom_23rem] bg-cover group`}
+          className={`flex flex-col bg-[url('assets/patsas.webp')] bg-top sm:bg-[center_bottom_23rem] lg:bg-center xl:bg-top 2xl:bg-[center_bottom_23rem] bg-cover group`}
         >
-          <div className="bg-black/75 sm:opacity-0 sm:group-hover:opacity-100 sm:group-hover:bg-black/75 drop-shadow-lg sm:hover:drop-shadow-2xl transition ease-in-out delay-100 p-6 h-full">
-            <h2 className="text-white text-lg font-title mb-3">
+          <div className="p-6 h-full bg-black/75 sm:gradient-mask sm:hover:gradient-mask-none">
+          <h2 className="text-white text-lg font-title mb-3">
               {yearsSince1982() + " toimintavuotta."}
             </h2>
             <p className="text-white font-text mb-3">
